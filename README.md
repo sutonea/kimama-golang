@@ -35,3 +35,35 @@ $ go run ./try-stdio.go
 ABC
 ABC
 ```
+
+## Num calc
+
+How to run:
+
+```bash
+cd src/try-num-calc/
+go run ./try-num-calc.go 
+```
+
+result:
+
+```bash
+$ go run ./try-num-calc.go 
+Input intA:
+3
+Input intB:
+5
+Result:
+8
+```
+
+result (with error):
+
+```bash
+$ go run ./try-num-calc.go 
+Input intA:
+4
+Input intB:
+ABC
+Cannot convert to int.
+```

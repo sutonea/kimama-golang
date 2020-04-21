@@ -67,3 +67,21 @@ Input intB:
 ABC
 Cannot convert to int.
 ```
+
+## Write test code
+
+How to run:
+
+```bash
+cd src/try-write-test-code/
+go test
+```
+
+result:
+
+```bash
+$ cd src/try-write-test-code/
+$ go test
+PASS
+ok      _/Users/s.i/development/workspace/sandbox/kimama-golang/src/try-write-test-code 0.006s
+```

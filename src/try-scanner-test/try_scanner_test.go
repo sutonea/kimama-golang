@@ -1,6 +1,10 @@
 package tryscannertest
 
-import "testing"
+import (
+	"bufio"
+	"strings"
+	"testing"
+)
 
 func TestScanner(t *testing.T) {
 
@@ -14,7 +18,7 @@ func TestScanner(t *testing.T) {
 	}
 
 	for _, p := range patterns {
-		result, e := MyScanner(p.in)
+		result, e := MyScanner(bufio.NewScanner(strings.NewReader(p.in)))
 		if e != nil {
 			t.Errorf("Unexpected Error")
 		}
